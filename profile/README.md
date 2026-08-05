@@ -18,3 +18,13 @@ Cross-device authentication, recovery, synchronization, SDK, desktop, mobile, AP
 | `account-recovery-security` | security | `ready` | `matrix` |
 
 Pull requests run deterministic harness checks. Emulators, desktop matrices, live APIs/providers, databases, chaos, scale, and soaks are scheduled/manual. Missing upstreams or credentials are blocked readiness—not false passes or product regressions.
+
+<!-- org-project-routing:start -->
+## Planning and delivery
+
+- [GitHub Project: 3fa-app-test-project](https://github.com/orgs/3fa-app-test/projects/1)
+- [Linear planning project](https://linear.app/denman/project/githubcom3fa-app-test-ad9ba775843f)
+- [Detailed project-routing contract](../docs/PROJECTS.md)
+
+GitHub owns code and delivery evidence; Linear owns planning and dependencies. The linked organization Project provides the cross-repository execution view.
+<!-- org-project-routing:end -->
