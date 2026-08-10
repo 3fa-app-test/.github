@@ -1,5 +1,33 @@
 # Organization-wide agent instructions
 
+These instructions define public organization-wide defaults for automation and
+coding agents working in `3fa-app-test` repositories. A repository may define
+stricter local policy, but may not weaken these defaults.
+
+## Test-organization engineering policy
+
+- Never commit credentials, private keys, access tokens, customer data,
+  production data, or private-repository inventories.
+- Resolve conflicts semantically by inspecting both sides, the merge base,
+  nearby tests and contracts, and normally 3–10 relevant prior commits.
+- Prefer focused changes, explicit validation, non-destructive Git operations,
+  and documented tradeoffs.
+- Cross-repository integration uses versioned interfaces, APIs, SDKs, events,
+  or explicitly owned replicated read models. Services do not reach into
+  another service's database by default.
+- Infrastructure and monorepo application source remain separate. An infra
+  repository must not appear as an application submodule.
+- Prefer Zed packages or immutable artifacts for package dependencies.
+  Production deploys immutable artifacts or OCI digests, not source clones.
+
+## Required test workflow
+
+1. Read repository-local instructions and relevant contracts before editing.
+2. Inspect affected tests and relevant history whenever intent is material.
+3. Keep changes scoped and preserve stronger local policy.
+4. Run the most relevant formatter, linter, tests, and secret scan available.
+5. Report exactly what changed, what was validated, and remaining uncertainty.
+
 <!-- ore-org-baseline:begin -->
 These instructions apply to this repository. Repository-local instructions may add stricter requirements, but they must not weaken this baseline.
 
