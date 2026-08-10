@@ -28,6 +28,11 @@ real-system checks from fixtures or permitted external-service doubles.
 
 ## Acceptance change
 
+- [ ] Source commits are immutable.
+- [ ] Product assertions execute.
+- [ ] Failure and recovery paths execute.
+- [ ] Logs contain no secrets or raw private media.
+- [ ] Emulator, browser, and database matrices are justified.
 - [ ] Failure classification is explicit.
 - [ ] Upstream revision or package is recorded.
 - [ ] Fixtures are synthetic and secret-free.

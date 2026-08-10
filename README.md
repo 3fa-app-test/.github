@@ -1,6 +1,10 @@
 # .github
 Governance and reusable test workflow policy for 3fa-app-test.
 
+The fleet convention is to pin source dependencies to immutable commits,
+exercise real dependency lanes, and keep product assertions alongside the
+generated plan contract.
+
 
 <!-- ore-org-baseline:begin -->
 ## Organization-wide defaults

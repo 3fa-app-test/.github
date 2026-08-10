@@ -4,6 +4,18 @@ Independent acceptance organization for **3FA-app**.
 
 Cross-device authentication, recovery, synchronization, SDK, desktop, mobile, API, and browser-extension acceptance.
 
+## Coverage profiles
+
+- `api-contract`
+- `desktop-e2e`
+- `extension-e2e`
+- `flutter-emulator`
+- `interop-e2e`
+- `mcp-contract`
+- `protocol-e2e`
+- `sdk-consumer`
+- `security-e2e`
+
 ## Portfolio
 
 | Repository | Class | Readiness | Primary dependency path |
@@ -45,3 +57,7 @@ Repositories in this organization use semantic conflict resolution with 3–10 r
 
 The public registry withholds private repository names and edges.
 <!-- END MANAGED REPOSITORY RELATIONSHIPS v1 -->
+
+Generated pull-request workflows use least privilege, immutable action pins,
+and no persisted checkout credential. Integration workflows are gated by
+organization variables and credentials.
