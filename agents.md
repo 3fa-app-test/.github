@@ -1,4 +1,6 @@
-# Copilot instructions for `3fa-app-test`
+# Organization-wide agent instructions
+
+These instructions apply to automation and coding agents working in `3fa-app-test` repositories unless a repository defines stricter local policy.
 
 ## Durable engineering policy
 
@@ -10,8 +12,13 @@
 - `*-infra` repositories and `*-monorepo` application source remain separate. A `*-infra` repository must never appear as a Git submodule under `*-monorepo/apps`.
 - Git submodules are reserved for explicitly coordinated editable source composition. Zed packages or immutable artifacts are preferred for package dependencies. Production deploys immutable artifacts or OCI digests, not source clones.
 
-Before proposing code, identify repository boundaries and existing interfaces. Preserve compatible intent during conflict resolution, avoid destructive recovery commands, and add or update tests with behavior changes.
+## Required workflow
 
+1. Read repository-local instructions and relevant contracts before editing.
+2. Inspect affected tests and 3–10 relevant commits when history is material.
+3. Keep changes scoped and do not overwrite stronger local policy.
+4. Run the most relevant formatter, linter, tests, and secret scan available.
+5. Report exactly what changed, what was validated, and remaining uncertainty.
 
 <!-- ore-org-baseline:begin -->
 These instructions apply to this repository. Repository-local instructions may add stricter requirements, but they must not weaken this baseline.
