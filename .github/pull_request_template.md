@@ -17,10 +17,10 @@ Describe affected repositories, APIs, schemas, generated artifacts, migrations, 
 - [ ] No destructive or history-rewriting operation was executed or recommended
 - [ ] No secrets, personal data, or production data are included
 - [ ] Failure classification is explicit
-- [ ] Upstream revision or package is recorded
+- [ ] Upstream revisions and package coordinates are recorded
 - [ ] Fixtures are synthetic and secret-free
 - [ ] Expensive checks are scheduled or manual
-- [ ] A superseded PR contributed at least one traced substantive idea when applicable
+- [ ] Any superseded PR contributed at least one traced substantive idea when applicable
 
 ## Risks and roll-forward plan
 
